@@ -1,29 +1,27 @@
-# ip_address = input("Please enter an ip address: ")
+# list_1 = []
+# list_2 = list()
 #
-# print(ip_address.count("."))
-
-parrot_list = ["non pinin'", "no more", "a stiff", "bereft of life"]
-
-parrot_list.append("A Norwegian blue")
-
-for state in parrot_list:
-    print("this parrot is " + state)
+# print("List 1: {}".format(list_1))
+# print("List 2: {}".format(list_2))
 
 
-even = [2, 4, 6, 8, 10]
-odd = [1, 3, 5, 7, 9]
 
-numbers = even + odd
+# if list_1 == list_2:
+#     print("the lists are equal")
 
-sorted_numbers = sorted(numbers)
+even = [2, 4, 6, 8]
+odd = [1,3,5,7,9]
+#
+# another_even = sorted(even, reverse=True)
+#
+# print( another_even is even)
+#
+# another_even.sort(reverse = True)
+#
+# print(even)
+numbers = [even, odd]
 
-if numbers == sorted_numbers:
-    print("The lists are equal")
-else:
-    print("They are not equal")
-
-
-if sorted_numbers == sorted(numbers):
-    print("The lists are equal")
-else:
-    print("They are not equal")
+for number_set in numbers:
+    print(number_set)
+    for value in number_set:
+        print(value)
